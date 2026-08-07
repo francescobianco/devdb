@@ -1,0 +1,9 @@
+services:
+
+  app:
+    build: .
+    environment:
+      - MYSQL_HOST=francescobianco.devdb.DBCLOUD.com
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${DBCLOUD_DEVDB_API_KEY}
+      - MYSQL_DATABASE=app01
